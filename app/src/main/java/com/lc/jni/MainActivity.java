@@ -14,9 +14,8 @@ public class MainActivity extends AppCompatActivity {
     findViewById(R.id.tv_info).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-        NativeMethod nativeMethod = new NativeMethod();
-        String s = NativeMethod.add(34,2)+"";
-        Toast.makeText(MainActivity.this, s, Toast.LENGTH_SHORT).show();
+        String result = String.valueOf(NativeMethod.add(34,2));
+        Toast.makeText(MainActivity.this, result, Toast.LENGTH_SHORT).show();
       }
     });
   }
