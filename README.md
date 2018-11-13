@@ -16,7 +16,7 @@ public static native int add(int x, int y);
 
 5.新建Android.mk文件并配置
 LOCAL_MODULE := NativeMethod 配置生成的so文件名为NativeMethod,最终会生成libNativeMethod.so
-LOCAL_SRC_FILES := NativeMethod.c ,配置从哪个c文件生成so文件，如果有多个.c文件需要生成so文件用逗号隔开。
+LOCAL_SRC_FILES := NativeMethod.c ,配置从哪个c文件生成so文件，如果有多个.c文件需要生成so文件用空格隔开。
 
 6.新建Application.mk文件
 APP_ABI:=all 表示生成所有类型的.so文件
